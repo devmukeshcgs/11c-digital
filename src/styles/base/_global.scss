@@ -1,0 +1,115 @@
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
+
+//RUBIK
+// @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
+
+//DOSIS
+//@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+//POPPINS
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+//Manrope
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+html {
+  font-size: 18px;
+  scroll-behavior: smooth;
+
+  body {
+    font-family: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+  }
+  @media screen and (min-width: 810px) and (max-width: 1439px) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: 811px) {
+    font-size: 14px;
+  }
+}
+::-moz-selection {
+  /* Code for Firefox */
+  color: $white;
+  background: $primary;
+}
+
+::selection {
+  color: $white;
+  background: $primary;
+}
+
+section {
+  padding: 2rem 1rem;
+  @media screen and (min-width: 810px) and (max-width: 1439px) {
+  }
+  @media screen and (max-width: 811px) {
+    section {
+      padding: 0rem 0rem;
+    }
+  }
+}
+.progress-bar {
+  height: 1px;
+  width: 100%;
+  background: orange;
+}
+
+.bg-animation {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  .anim-cir {
+    width: 60vw;
+    height: 50vw;
+    position: absolute;
+    top: 120vh;
+    left: -25vw;
+    background: $primary;
+    filter: blur(20px);
+    animation: mymove 10s infinite;
+    border-top-right-radius: 250vw;
+    border-top-left-radius: 300vw;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 500vw;
+    z-index: -1;
+  }
+  @keyframes mymove {
+    50% {
+      scale: 0.95;
+      rotate: 5deg;
+      border-top-left-radius: 220vw;
+      border-top-right-radius: 290vw;
+      border-bottom-left-radius: 300px;
+      border-bottom-right-radius: 400vw;
+    }
+  }
+
+  .anim-cir2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 250px;
+    right: -150px;
+    background: $primary;
+    filter: blur(20px);
+    animation: mymove2 5s infinite;
+    border-radius: 200px;
+  }
+
+  @keyframes mymove2 {
+    50% {
+      scale: 0.9;
+      rotate: 5deg;
+      border-bottom-right-radius: 250px;
+      border-bottom-left-radius: 350px;
+    }
+  }
+}
+.black-text-gradient {
+  background: linear-gradient(316deg, #414345 27%, #0f0f11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

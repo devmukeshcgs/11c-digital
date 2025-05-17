@@ -1,0 +1,98 @@
+.marquee {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  min-height: 50vh;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem;
+    span {
+      margin: 2rem;
+      display: block;
+      border-radius: 15px;
+      width: 20px;
+      height: 20px;
+      color: #ff4500;
+      background-image: -webkit-linear-gradient(
+        45deg,
+        #ff4500 18%,
+        #ff9800 78%
+      );
+    }
+  }
+}
+
+// NEW SCROLL
+
+.progress {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: var(--accent);
+  bottom: 100px;
+}
+
+.parallax {
+  overflow: hidden;
+  letter-spacing: -2px;
+  line-height: 0.8;
+  margin: 0;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  // min-height: 150px;
+}
+
+.parallax .scroller {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 64px;
+  font-size: 5.61rem;
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  color: $black;
+  color: $gray;
+  span {
+    display: flex;
+    align-items: center;
+    span {
+      margin: 2rem;
+      display: inline-block;
+      border-radius: 15px;
+      width: 20px;
+      height: 20px;
+      color: #ff4500;
+      background: #ff4500;
+      // background-image: -webkit-linear-gradient(
+      //   45deg,
+      //   #ff4500 18%,
+      //   #ff9800 78%
+      // );
+    }
+  }
+}
+
+.parallax span {
+  display: block;
+  margin-right: 30px;
+}

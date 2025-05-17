@@ -1,0 +1,41 @@
+.experties {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+  .content-wrapper {
+    display: flex;
+    h6 {
+      // background: -webkit-linear-gradient(#eee, #333);
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+
+      /** TEXT GRADIENT */
+      color:$gray;
+      // background-image: -webkit-linear-gradient(
+      //   45deg,
+      //   #ff4500 18%,
+      //   #ff9800 78%
+      // );
+      // background-clip: text;
+      // -webkit-background-clip: text;
+      // text-fill-color: transparent;
+      // -webkit-text-fill-color: transparent;
+    }
+    h3 {
+    }
+  }
+
+  @media screen and (min-width: 810px) and (max-width: 1439px) {
+  }
+  @media screen and (max-width: 811px) {
+    padding: 0;
+    &section {
+      // padding: 0px;
+    }
+    .content-wrapper {
+      // padding: 0px;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  // background: $body-bg;
+  // background-color: $body-bg;
+  z-index: 5;
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+
+  .logo-container {
+    overflow-y: hidden;
+    padding: 15px;
+    a {
+      text-decoration: none;
+      font-size: 1.2rem !important;
+      font-weight: 700 !important;
+      color: $black;
+      .logo {
+        display: flex;
+        align-items: center;
+        .logo-name {
+          font-size: inherit;
+          font-weight: inherit;
+          color: $primary;
+          margin: 0;
+          span {
+            font-weight: 100;
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+
+  .menu-container {
+    overflow-y: hidden;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-family: inherit;
+    font-weight: 500;
+
+    div {
+      text-transform: uppercase;
+      font-size: 13px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $black;
+  flex-wrap: nowrap;
+  // justify-content: space-between;
+  justify-content: space-around;
+  // justify-content: space-evenly;
+
+  button {
+    align-self: flex-end;
+    // margin: 35px 45px 0 0;
+    outline: none;
+    border: none;
+    background-color: transparent !important;
+    text-transform: uppercase;
+    font-family: inherit;
+    color: white;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    list-style: none;
+    // margin-top: 40px;
+    text-align: center;
+
+    li {
+      margin: 20px 0;
+      overflow-y: hidden;
+      user-select: none;
+
+      a {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        // font-size: 34px;
+        color: $white;
+      }
+      &:hover {
+        font-style: italic;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .contact {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: space-evenly;
+    color: $primary;
+    a {
+      font-weight: normal;
+      letter-spacing: 1px;
+      color: $gray;
+      padding: 0.5rem;
+      &:first-of-type {
+        color: $gray;
+      }
+    }
+
+    @media screen and (min-width: 810px) and (max-width: 1439px) {
+    }
+
+    @media screen and (max-width: 811px) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 4rem;
+      margin-top: 1rem;
+    }
+  }
+}

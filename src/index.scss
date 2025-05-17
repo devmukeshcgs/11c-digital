@@ -1,0 +1,36 @@
+
+.page-wrapper {
+  overflow: visible;
+}
+// @import "abstracts/variables";
+@import "./styles/var";
+
+@import "./styles/base/reset";
+@import "./styles/base/global";
+@import "./styles/base/typo";
+@import "./styles/base/form";
+
+ 
+
+@import "./styles/header";
+@import "./styles/main";
+@import "./styles/footer";
+
+// PAGE
+@import "./styles/transition";
+@import "./styles/hero-banner";
+// @import "./styles/marque";
+@import "./styles/marquee";
+@import "./styles/achivment";
+@import "./styles/experties";
+@import "./styles/marquee";
+@import "./styles/services-card";
+@import "./styles/hello";
+@import "./styles/services";
+@import "./styles/steps-card";
+
+//Projeect
+@import "./styles/projects";
+@import "./styles/project-card";
+@import "./styles/project-template";
+

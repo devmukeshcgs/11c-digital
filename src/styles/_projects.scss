@@ -1,0 +1,19 @@
+.projects-section {
+  margin-top: 80px;
+  .projects-banner {
+    width: 80%;
+    min-height: 60vh;
+  }
+  @media screen and (min-width: 810px) and (max-width: 1439px) {
+  }
+  @media screen and (max-width: 811px) {
+  }
+  .projects-banner {
+    width: 100%;
+    min-height: auto;
+
+    h1{
+      font-size: 3rem;
+    }
+  }
+}
